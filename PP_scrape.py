@@ -25,9 +25,6 @@ states = [
 # Years
 years = [2012, 2016, 2020]
 
-
-
-
 # Loop through each state and year, fetching immigration bills
 def query_immigration_bills(state, year):
     """
@@ -53,7 +50,7 @@ def query_immigration_bills(state, year):
     
     except Exception as e:
         print(f"Error querying {state} for {year}: {e}")
-        return None  # Return None if there's an error, so we can skip the iteration
+        return None
 
 all_bills = []
 
@@ -75,9 +72,4 @@ for state in states:
             
 # Convert the list of bills to a DataFrame for analysis
 bills_df = pd.DataFrame.from_dict(all_bills)
-bills_df.head()
-# Convert the list of bills to a DataFrame for analysis
-bills_df = pd.DataFrame.from_dict(all_bills)
-
-# Display the DataFrame
 bills_df.head()
