@@ -8,7 +8,7 @@ Purpose: Using OpenStates PluralPolicy API to scrape immigration bills
 """
 
 import pyopenstates
-pyopenstates.set_api_key('60ee7b5d-bf2d-4b3d-9a62-49d74da80e05')
+pyopenstates.set_api_key('secret.py')
 
 import pandas as pd
 
